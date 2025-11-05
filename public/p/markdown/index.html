@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" Markdown入门教程 Ambrum 一、准备工作 二、基本语法 三、导出为PDF文档 🔗 在线作品 一、准备工作 安装 VS Code\nvscode 官网下载地址\n下载必要的插件\n">
+<title>Markdown</title>
+
+<link rel='canonical' href='http://localhost:1313/p/markdown/'>
+
+<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Markdown">
+<meta property='og:description' content=" Markdown入门教程 Ambrum 一、准备工作 二、基本语法 三、导出为PDF文档 🔗 在线作品 一、准备工作 安装 VS Code\nvscode 官网下载地址\n下载必要的插件\n">
+<meta property='og:url' content='http://localhost:1313/p/markdown/'>
+<meta property='og:site_name' content='yunduani'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-11-05T17:40:36&#43;08:00'/><meta property='article:modified_time' content='2025-11-05T17:40:36&#43;08:00'/>
+<meta name="twitter:title" content="Markdown">
+<meta name="twitter:description" content=" Markdown入门教程 Ambrum 一、准备工作 二、基本语法 三、导出为PDF文档 🔗 在线作品 一、准备工作 安装 VS Code\nvscode 官网下载地址\n下载必要的插件\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_bea4ea11d6cd5487.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">yunduani</a></h1>
+            <h2 class="site-description">欢迎来到我的博客</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/yunduani'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>文档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一准备工作">一、准备工作</a></li>
+    <li><a href="#二基本语法">二、基本语法</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#二级标题">二级标题</a>
+      <ol>
+        <li><a href="#三级标题">三级标题</a></li>
+      </ol>
+    </li>
+    <li><a href="#三导出为pdf文档">三、导出为PDF文档</a></li>
+    <li><a href="#x1f517-在线作品">🔗 在线作品</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/markdown/" >
+                Markdown
+            </a>
+        
+            <a href="/categories/%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7/" >
+                文档工具
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/markdown/">Markdown</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-11-05T17:40:36&#43;08:00'>2025-11-05</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 style="text-align:center; font-family:Times New Roman; color:blue;">
+  Markdown<span style="font-family:SimSun;">入门教程</span>
+</h1>
+<h2 style="text-align:center; font-family:Times New Roman; font-size:20pt;"> Ambrum
+</h2>
+<ul>
+<li><a class="link" href="#%e4%b8%80%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c" >一、准备工作</a></li>
+<li><a class="link" href="#%e4%ba%8c%e5%9f%ba%e6%9c%ac%e8%af%ad%e6%b3%95" >二、基本语法</a></li>
+<li><a class="link" href="#%e4%b8%89%e5%af%bc%e5%87%ba%e4%b8%bapdf%e6%96%87%e6%a1%a3" >三、导出为PDF文档</a></li>
+<li><a class="link" href="#-%e5%9c%a8%e7%ba%bf%e4%bd%9c%e5%93%81" >🔗 在线作品</a></li>
+</ul>
+<hr>
+<h2 id="一准备工作">一、准备工作
+</h2><ol>
+<li>
+<p><strong>安装 VS Code</strong><br>
+<a class="link" href="https://code.visualstudio.com/"  target="_blank" rel="noopener"
+    >vscode 官网下载地址</a></p>
+</li>
+<li>
+<p><strong>下载必要的插件</strong></p>
+<ul>
+<li>Markdown All in One</li>
+<li>Markdown Preview Enhanced</li>
+<li>Markdown PDF（不推荐）</li>
+<li>Paste Image</li>
+</ul>
+</li>
+<li>
+<p><strong>创建 <code>.md</code> 文档，打开同步预览功能，开始编辑</strong></p>
+</li>
+</ol>
+<hr>
+<h2 id="二基本语法">二、基本语法
+</h2><ol>
+<li><strong>标题</strong>
+<h1 id="一级标题">一级标题
+</h1><h2 id="二级标题">二级标题
+</h2><h3 id="三级标题">三级标题
+</h3></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## 二、基本语法
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. **标题**
+</span></span><span class="line"><span class="cl">    # 一级标题  
+</span></span><span class="line"><span class="cl">    ## 二级标题  
+</span></span><span class="line"><span class="cl">    ### 三级标题
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li><strong>引用</strong></li>
+</ol>
+<blockquote>
+<p>放备注合适和引用内容为主</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt;放备注合适和引用内容为主
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>表示代码推荐使用这个</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">div</span> <span class="n">align</span><span class="o">=</span><span class="s">&#34;center&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s">&#34;https://imgse.com/i/pFZHwAe&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="o">&lt;</span><span class="n">img</span> <span class="n">src</span><span class="o">=</span><span class="s">&#34;https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg&#34;</span> <span class="n">alt</span><span class="o">=</span><span class="s">&#34;pFZHwAe.jpg&#34;</span> <span class="n">width</span><span class="o">=</span><span class="s">&#34;60%&#34;</span> <span class="o">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li><strong>列表</strong>
+<ol>
+<li>无序列表</li>
+</ol>
+<ul>
+<li>列表1</li>
+</ul>
+<ul>
+<li>列表2</li>
+</ul>
+<ul>
+<li>列表3</li>
+</ul>
+<ol>
+<li>有序列表</li>
+<li>嵌套</li>
+<li>TodoList
+<ul>
+<li><input checked="" disabled="" type="checkbox"> a</li>
+<li><input disabled="" type="checkbox"> b</li>
+<li><input disabled="" type="checkbox"> c</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. **列表**
+</span></span><span class="line"><span class="cl">   1. 无序列表
+</span></span><span class="line"><span class="cl">   - 列表1
+</span></span><span class="line"><span class="cl">   + 列表2
+</span></span><span class="line"><span class="cl">   * 列表3 
+</span></span><span class="line"><span class="cl">   1. 有序列表
+</span></span><span class="line"><span class="cl">   2. 嵌套
+</span></span><span class="line"><span class="cl">   3. TodoList
+</span></span><span class="line"><span class="cl">      - [x] a
+</span></span><span class="line"><span class="cl">      - [ ] b
+</span></span><span class="line"><span class="cl">      - [ ] c
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li><strong>表格</strong>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: left">左对齐</th>
+          <th style="text-align: center">居中对齐</th>
+          <th style="text-align: right">右对齐</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">a</td>
+          <td style="text-align: center">b</td>
+          <td style="text-align: right">c</td>
+      </tr>
+  </tbody>
+</table></div>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">2. **表格**
+</span></span><span class="line"><span class="cl">    | 左对齐 | 居中对齐 | 右对齐 |
+</span></span><span class="line"><span class="cl">    |:-|:-:|-:|
+</span></span><span class="line"><span class="cl">    | a | b | c |
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li><strong>段落</strong>
+<ul>
+<li>换行：两个以上空格后回车/空一行</li>
+<li>分割线：3个***</li>
+</ul>
+<hr>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">3. **段落**
+</span></span><span class="line"><span class="cl">   - 换行：两个以上空格后回车/空一行
+</span></span><span class="line"><span class="cl">   - 分割线：3个***
+</span></span><span class="line"><span class="cl">    ***
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>字体
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">字体</th>
+          <th style="text-align: center">代码</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">斜体</td>
+          <td style="text-align: center"><em>斜体</em></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">粗体</td>
+          <td style="text-align: center"><strong>粗体</strong></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">斜粗体</td>
+          <td style="text-align: center"><em><strong>斜粗体</strong></em></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">删除线</td>
+          <td style="text-align: center"><del>删除里面的文字</del></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">下划线</td>
+          <td style="text-align: center"><u>下划线</u></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">高亮</td>
+          <td style="text-align: center">==高亮==</td>
+      </tr>
+  </tbody>
+</table></div>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">   - 字体
+</span></span><span class="line"><span class="cl">| 字体 | 代码 |
+</span></span><span class="line"><span class="cl">|:-:|:-:|
+</span></span><span class="line"><span class="cl">| 斜体 | *斜体* |
+</span></span><span class="line"><span class="cl">| 粗体 | **粗体** |
+</span></span><span class="line"><span class="cl">| 斜粗体 | ***斜粗体*** |
+</span></span><span class="line"><span class="cl">| 删除线 | ~~删除里面的文字~~ |
+</span></span><span class="line"><span class="cl">| 下划线 | &lt;u&gt;下划线&lt;/u&gt; |
+</span></span><span class="line"><span class="cl">| 高亮 | ==高亮== |
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>==注意这里==</p>
+</blockquote>
+<ol>
+<li><strong>代码</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="n">using</span> <span class="n">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">print</span><span class="p">(</span><span class="s">&#34;hello world&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">`</span><span class="nf">print</span><span class="p">(</span> <span class="s">&#34;hello wor1d);`</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="7">
+<li><strong>超链接</strong></li>
+</ol>
+<ul>
+<li><a class="link" href="https://www.runoob.com/markdown/md-link.html"  target="_blank" rel="noopener"
+    >更多使用教程可以参考网站</a></li>
+<li>这是一条链接，可以直接点击</li>
+</ul>
+<ol>
+<li><strong>图片</strong></li>
+</ol>
+<ul>
+<li>
+<p>使用图床保存图片（推荐：<a class="link" href="https://imgse.com/"  target="_blank" rel="noopener"
+    >路过图床</a>）</p>
+</li>
+<li>
+<p>使用 Markdown 语法插入图片（点击可放大）：</p>
+</li>
+</ul>
+<hr>
+<p><a class="link" href="https://imgse.com/i/pFZHwAe"  target="_blank" rel="noopener"
+    ><img src="https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="pFZHwAe.jpg"
+	
+	
+></a></p>
+<hr>
+<ul>
+<li>使用 HTML 控制图片大小和位置（居中显示）：
+<div align="center">
+  <a href="https://imgse.com/i/pFZHwAe">
+    <img src="https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg" alt="pFZHwAe.jpg" width="60%" />
+  </a>
+</div>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">7. **超链接**
+</span></span><span class="line"><span class="cl">- [更多使用教程可以参考网站](https://www.runoob.com/markdown/md-link.html)
+</span></span><span class="line"><span class="cl">-  这是一条链接，可以直接点击
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">1. **图片**
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 使用图床保存图片（推荐：[路过图床](https://imgse.com/)）
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 使用 Markdown 语法插入图片（点击可放大）：
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  [![pFZHwAe.jpg](https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg)](https://imgse.com/i/pFZHwAe)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 使用 HTML 控制图片大小和位置（居中显示）：
+</span></span><span class="line"><span class="cl">  &lt;div align=&#34;center&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;a href=&#34;https://imgse.com/i/pFZHwAe&#34;&gt;
+</span></span><span class="line"><span class="cl">      &lt;img src=&#34;https://s11.ax1x.com/2024/01/23/pFZHwAe.jpg&#34; alt=&#34;pFZHwAe.jpg&#34; width=&#34;60%&#34; /&gt;
+</span></span><span class="line"><span class="cl">    &lt;/a&gt;
+</span></span><span class="line"><span class="cl">  &lt;/div&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="三导出为pdf文档">三、导出为PDF文档
+</h2><ul>
+<li>使用Markdown PDF(不推荐)</li>
+<li>open in Browser-手动另存为PDF文档
+[教程]:https://www.runoob.com/markdown/md-link.html</li>
+</ul>
+<h2 id="x1f517-在线作品">🔗 在线作品
+</h2><p><a class="link" href="https://zhangsan.dev"  target="_blank" rel="noopener"
+    ><img src="https://img.shields.io/badge/Website-zhangsan.dev-blue"
+	
+	
+	
+	loading="lazy"
+	
+		alt="个人网站"
+	
+	
+></a>
+<a class="link" href="https://github.com/zhangsan"  target="_blank" rel="noopener"
+    ><img src="https://img.shields.io/badge/GitHub-zhangsan-black"
+	
+	
+	
+	loading="lazy"
+	
+		alt="GitHub"
+	
+	
+></a>
+<a class="link" href="https://juejin.cn/user/zhangsan"  target="_blank" rel="noopener"
+    ><img src="https://img.shields.io/badge/%e6%8e%98%e9%87%91-@%e5%bc%a0%e4%b8%89-blue"
+	
+	
+	
+	loading="lazy"
+	
+		alt="掘金"
+	
+	
+></a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/hugohtml/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugohtml</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 yunduani
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.cca5f567351e19e5b21f8a0b663c41cf02b4449f47b55fe97812a97842552c74.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

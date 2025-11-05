@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on yunduani</title>
+        <link>http://localhost:1313/categories/hugo/</link>
+        <description>Recent content in Hugo on yunduani</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>yunduani</copyright>
+        <lastBuildDate>Wed, 05 Nov 2025 19:14:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugohtml</title>
+        <link>http://localhost:1313/p/hugohtml/</link>
+        <pubDate>Wed, 05 Nov 2025 19:14:40 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/hugohtml/</guid>
+        <description>&lt;h3 id=&#34;hugo-指令汇总&#34;&gt;hugo 指令汇总
+&lt;/h3&gt;&lt;h2 id=&#34;1-创建新的博客文章&#34;&gt;1. 创建新的博客文章
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;hugo new content post/xxx/xxx.md&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-最初创建新的hugo博客指令&#34;&gt;2. 最初创建新的hugo博客指令
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;hugo new site xxxx（文件夹名字）&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-启动服务器指令&#34;&gt;3. 启动服务器指令
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;敲打命令hugo server -D启动服务，访问http://localhost:1313&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
