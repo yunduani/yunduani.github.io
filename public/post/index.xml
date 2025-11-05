@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>yunduani</copyright>
-        <lastBuildDate>Wed, 05 Nov 2025 19:14:40 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 05 Nov 2025 19:57:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Student</title>
+        <link>http://localhost:1313/p/student/</link>
+        <pubDate>Wed, 05 Nov 2025 19:57:07 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/student/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Hugohtml</title>
         <link>http://localhost:1313/p/hugohtml/</link>
         <pubDate>Wed, 05 Nov 2025 19:14:40 +0800</pubDate>
