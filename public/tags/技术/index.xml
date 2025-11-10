@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>技术 on yunduani</title>
+        <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</link>
+        <description>Recent content in 技术 on yunduani</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>yunduani</copyright>
+        <lastBuildDate>Mon, 10 Nov 2025 14:30:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2025.11.10</title>
+        <link>http://localhost:1313/p/2025.11.10/</link>
+        <pubDate>Mon, 10 Nov 2025 14:30:00 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/2025.11.10/</guid>
+        <description>&lt;h1 id=&#34;操作指令与流程&#34;&gt;操作指令与流程
+&lt;/h1&gt;&lt;h2 id=&#34;1panel-安装与卸载&#34;&gt;1Panel 安装与卸载
+&lt;/h2&gt;&lt;h3 id=&#34;安装&#34;&gt;安装
+&lt;/h3&gt;&lt;p&gt;bash -c &amp;ldquo;$(curl -sSL &lt;a class=&#34;link&#34; href=&#34;https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh%29%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)&#34;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;卸载&#34;&gt;卸载
+&lt;/h3&gt;&lt;p&gt;1pctl uninstall&lt;/p&gt;
+&lt;h2 id=&#34;openlist-注意事项&#34;&gt;Openlist 注意事项
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;本地挂载的路径是镜像路径，不是宿主机路径！！！&lt;/li&gt;
+&lt;li&gt;根文件夹路径：/opt/openlist/data/本地网盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;hugo-博客自动化更新第-10-步&#34;&gt;Hugo 博客自动化更新（第 10 步）
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;新建文章
+hugo new post/xxx/xxx.md&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑内容
+（直接编辑生成的 .md 文件）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地预览
+hugo server -D&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;满意后提交
+git add .
+git commit -m &amp;ldquo;add hello world post&amp;rdquo;
+git push&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
