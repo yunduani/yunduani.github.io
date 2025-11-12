@@ -13,7 +13,8 @@ bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_star
 
 ### 卸载
 1pctl uninstall
-
+### 这个是查看1panel的登陆IP
+1panel-core user-info  
 
 ## Openlist 注意事项
 - 本地挂载的路径是镜像路径，不是宿主机路径！！！

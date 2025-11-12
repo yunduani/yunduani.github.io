@@ -7,20 +7,28 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>yunduani</copyright>
-        <lastBuildDate>Wed, 05 Nov 2025 19:57:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>软考</title>
-        <link>http://localhost:1313/categories/%E8%BD%AF%E8%80%83/</link>
-        <pubDate>Wed, 05 Nov 2025 19:57:07 +0800</pubDate>
+        <lastBuildDate>Wed, 12 Nov 2025 09:50:20 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows 系统</title>
+        <link>http://localhost:1313/categories/windows-%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Wed, 12 Nov 2025 09:50:20 +0800</pubDate>
         
-        <guid>http://localhost:1313/categories/%E8%BD%AF%E8%80%83/</guid>
+        <guid>http://localhost:1313/categories/windows-%E7%B3%BB%E7%BB%9F/</guid>
         <description></description>
         </item>
         <item>
         <title>学习</title>
         <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</link>
-        <pubDate>Wed, 05 Nov 2025 19:57:07 +0800</pubDate>
+        <pubDate>Mon, 10 Nov 2025 14:30:00 +0800</pubDate>
         
         <guid>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>软考</title>
+        <link>http://localhost:1313/categories/%E8%BD%AF%E8%80%83/</link>
+        <pubDate>Wed, 05 Nov 2025 19:57:07 +0800</pubDate>
+        
+        <guid>http://localhost:1313/categories/%E8%BD%AF%E8%80%83/</guid>
         <description></description>
         </item>
         <item>
@@ -50,42 +58,10 @@
         <item>
         <title>Test</title>
         <link>http://localhost:1313/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/test/</guid>
         <description>&lt;img src="http://localhost:1313/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
-        </item>
-        <item>
-        <title>测试</title>
-        <link>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Syntax</title>
-        <link>http://localhost:1313/categories/syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/syntax/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>http://localhost:1313/categories/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>http://localhost:1313/categories/test-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/test-with-whitespaces/</guid>
-        <description></description>
         </item>
         
     </channel>
